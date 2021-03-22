@@ -1,4 +1,6 @@
 <script>
+  import DirectionBlock from "./DirectionBlock.svelte";
+
   import EventBlock from "./EventBlock.svelte";
 </script>
 
@@ -30,7 +32,16 @@
     </div>
     <div slot="dateTime" class="eventDetails">
       <div class="times">
-        <h3>Westwoods Community Church</h3>
+        <h3>
+          <a
+            href="https://westwoodscc.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="wwLink"
+          >
+            Westwoods Community Church</a
+          >
+        </h3>
         <h4>Sunday 4/4</h4>
         <h4>6:30 Sunrise Service & 9am Easter Service</h4>
         <p>
@@ -64,7 +75,16 @@
     </div>
     <div slot="dateTime" class="dtonly">
       <div class="times">
-        <h3>Westwoods Community Church</h3>
+        <h3>
+          <a
+            href="https://westwoodscc.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="wwLink"
+          >
+            Westwoods Community Church</a
+          >
+        </h3>
 
         <h4>Friday 4/2</h4>
         <h4>3pm - 8pm</h4>
@@ -92,7 +112,16 @@
     </div>
     <div slot="dateTime" class="dtonly">
       <div class="times">
-        <h3>Westwoods Community Church</h3>
+        <h3>
+          <a
+            href="https://westwoodscc.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="wwLink"
+          >
+            Westwoods Community Church</a
+          >
+        </h3>
 
         <h4>Saturday 4/3</h4>
         <h4>10am - Noon</h4>
@@ -103,36 +132,99 @@
       </div>
     </div>
   </EventBlock>
-  <EventBlock
+  <DirectionBlock
     backgroundColor={`radial-gradient(circle, rgba(118,202,254,1) 0%, rgba(1,30,64,1) 100%)`}
     eventImg="assets/wwcc-logo.png"
-  />
+  >
+    <div slot="desc" class="wwDetails">
+      <div>
+        <h3>
+          <a
+            href="https://westwoodscc.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="wwLink"
+          >
+            Westwoods Community Church</a
+          >
+        </h3>
+        <h4>Sunday 4/4</h4>
+        <h4>6:30am Sunrise Service & 9am Easter Service</h4>
+        <p>
+          7700 W Woodard Drive<br />
+          Lakewood, CO
+        </p>
+      </div>
+      <div class="mapContainer">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3070.8329214253686!2d-105.08480848435234!3d39.675972808278864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b81ad73d8223d%3A0xef2d6fab8083844!2sWestwoods%20Community%20Church!5e0!3m2!1sen!2sus!4v1569100714699!5m2!1sen!2sus"
+          frameBorder="0"
+          allowFullScreen=""
+          title="Westwoods Map"
+          style="width: 100%; height: 25vh;"
+        />
+      </div>
+    </div>
+    <div class="pdfLinks" slot="links">
+      <a
+        href="assets/easter-flyer.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pdfLink"
+        ><div class="linkImage">
+          <img src="assets/easter-sunday.png" alt="Easter Sunday Logo" />
+        </div>
+        Easter Flyer</a
+      >
+      <a
+        href="assets/good-friday-flyer.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pdfLink"
+        ><div class="linkImage">
+          <img src="assets/good-friday.png" alt="Good Friday Logo" />
+        </div>
+        Good Friday Flyer</a
+      >
+      <a
+        href="assets/egg-hunt-flyer.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="pdfLink"
+        ><div class="linkImage">
+          <img src="assets/egg-hunt.png" alt="Egg Hunt Logo" />
+        </div>
+        Egg Hunt Flyer</a
+      >
+    </div>
+  </DirectionBlock>
 </main>
 
 <style>
   :global(img) {
     max-width: 100%;
+    max-height: 100%;
   }
   :global(h1) {
     font-size: clamp(28px, 5vw, 48px);
   }
   :global(h2) {
-    font-size: clamp(22px, 4vw, 36px);
+    font-size: clamp(26px, 4vw, 36px);
     margin: 0;
   }
   :global(h3) {
-    font-size: clamp(20px, 3vw, 30px);
+    font-size: clamp(24px, 3vw, 30px);
     line-height: 1.2;
     margin: 10px 0;
   }
   :global(h4) {
-    font-size: clamp(16px, 2.5vw, 26px);
+    font-size: clamp(20px, 2.5vw, 26px);
     line-height: 1.2;
     margin: 0;
     font-weight: 500;
   }
   :global(p) {
-    font-size: clamp(16px, 2.5vw, 26px);
+    font-size: clamp(20px, 2.5vw, 26px);
     line-height: 1.2;
     margin: 0.5em 0;
   }
@@ -146,14 +238,38 @@
     top: 2vh;
     left: 2vw;
   }
-  .eventDetails {
+  .eventDetails,
+  .wwDetails,
+  .pdfLinks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-around;
     justify-items: center;
     max-width: 100%;
   }
+  .pdfLinks {
+    margin-top: 3vh;
+    padding-top: 3vh;
+    border-top: 1px solid #fff;
+  }
   .dtonly {
     margin-left: 5vw;
+  }
+  .mapContainer {
+    width: 100%;
+  }
+  .wwLink,
+  .pdfLink {
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+  .pdfLink {
+    font-size: clamp(24px, 3vw, 30px);
+  }
+  .linkImage {
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
   }
 </style>
