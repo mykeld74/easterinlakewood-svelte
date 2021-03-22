@@ -40,6 +40,7 @@
   }
   .yourInvited {
     width: 94%;
+    max-width: 1280px;
     margin: auto;
     padding: 1.5vh 2vw;
     position: relative;

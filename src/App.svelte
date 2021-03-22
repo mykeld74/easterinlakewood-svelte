@@ -147,7 +147,7 @@
     eventImg="assets/wwcc-logo.png"
   >
     <div slot="desc" class="wwDetails">
-      <div>
+      <div class="address">
         <h3>
           <a
             href="https://westwoodscc.org"
@@ -265,7 +265,8 @@
   .dtonly {
     margin-left: 5vw;
   }
-  .mapContainer {
+  .mapContainer,
+  .address {
     width: 100%;
   }
   .wwLink,
