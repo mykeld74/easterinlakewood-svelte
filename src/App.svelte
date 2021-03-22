@@ -182,7 +182,7 @@
         rel="noopener noreferrer"
         class="pdfLink"
         ><div class="linkImage">
-          <img src="assets/easter-sunday.png" alt="Easter Sunday Logo" />
+          <img src="assets/crown-logo.png" alt="Easter Sunday Logo" />
         </div>
         Easter Flyer</a
       >

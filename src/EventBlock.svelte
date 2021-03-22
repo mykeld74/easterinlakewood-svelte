@@ -1,5 +1,5 @@
 <script>
-  export let eventImg = "assets/easter-sunday.png";
+  export let eventImg = "assets/crown-logo.png";
   export let eventImgDesc = "Easter Sunday Logo";
   export let backgroundColor = `radial-gradient(
       circle,
