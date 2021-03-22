@@ -10,7 +10,12 @@
 
 <div class="eventContainer" style="background: {backgroundColor}">
   <div class="eventLogo">
-    <img src={eventImg} alt={eventImgDesc} />
+    <a
+      href="https://westwoodscc.org"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="wwLink"><img src={eventImg} alt={eventImgDesc} /></a
+    >
   </div>
 
   <div class="yourInvited">
