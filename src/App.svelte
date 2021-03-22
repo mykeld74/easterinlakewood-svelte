@@ -15,7 +15,17 @@
 
 <main>
   <div class="logo">
-    <img src="assets/wwcc-logo.png" alt="Westwoods Community Church Logo" />
+    <a
+      href="https://westwoodscc.org"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="wwLink"
+    >
+      <img
+        src="assets/wwcc-logo.png"
+        alt="Westwoods Community Church Logo"
+      /></a
+    >
   </div>
   <EventBlock>
     <h2 slot="title">Because Jesus Lives</h2>
@@ -233,7 +243,7 @@
     margin: 0;
   }
   .logo {
-    width: 10vw;
+    width: clamp(100px, 20vw, 250px);
     position: absolute;
     top: 2vh;
     left: 2vw;
@@ -271,5 +281,6 @@
     display: grid;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
   }
 </style>
