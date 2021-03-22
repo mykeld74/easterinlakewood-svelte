@@ -39,8 +39,4 @@
     padding: 1.5vh 2vw;
     position: relative;
   }
-  .invite {
-    width: 100%;
-    text-align: center;
-  }
 </style>
