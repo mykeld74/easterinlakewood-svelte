@@ -114,7 +114,7 @@
     </h2>
     <div slot="desc">
       <p>
-        Join your neighbors Saturday, 4/20 from 10am to noon for our annual
+        Join your neighbors Saturday, 4/3 from 10am to noon for our annual
         COMMUNITY EGG HUNT!
       </p>
       <p>PRIZES, GAMES, FOOD, and FUN for the whole family!</p>
