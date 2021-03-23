@@ -1,6 +1,5 @@
 <script>
   import DirectionBlock from "./DirectionBlock.svelte";
-
   import EventBlock from "./EventBlock.svelte";
 </script>
 
@@ -22,10 +21,10 @@
       class="wwLink"
     >
       <img
-        src="assets/wwcc-logo.png"
+        src="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_250,dpr_auto,f_auto,q_auto/easterinlakewood/wwccLogo"
         alt="Westwoods Community Church Logo"
-      /></a
-    >
+      />
+    </a>
   </div>
   <EventBlock>
     <h2 slot="title">Because Jesus Lives</h2>
@@ -69,7 +68,7 @@
     </div>
   </EventBlock>
   <EventBlock
-    eventImg="assets/good-friday.png"
+    eventImg="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_450,dpr_auto,f_auto,q_auto/easterinlakewood/good_friday"
     backgroundColor={`radial-gradient(circle, rgba(87,87,87,1) 0%, rgba(35,35,35,1) 100%)`}
   >
     <h2 slot="title">A journey with Jesus and those closest to Him</h2>
@@ -106,7 +105,7 @@
     </div>
   </EventBlock>
   <EventBlock
-    eventImg="assets/egg-hunt.png"
+    eventImg="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_450,dpr_auto,f_auto,q_auto/easterinlakewood/easter_egg_hunt"
     backgroundColor={`radial-gradient(circle, rgba(158,217,115,1) 0%, rgba(108,177,127,1) 100%)`}
   >
     <h2 slot="title">
@@ -144,7 +143,7 @@
   </EventBlock>
   <DirectionBlock
     backgroundColor={`radial-gradient(circle, rgba(118,202,254,1) 0%, rgba(1,30,64,1) 100%)`}
-    eventImg="assets/wwcc-logo.png"
+    eventImg="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_450,dpr_auto,f_auto,q_auto/easterinlakewood/wwccLogo"
   >
     <div slot="desc" class="wwDetails">
       <div class="address">
@@ -182,7 +181,10 @@
         rel="noopener noreferrer"
         class="pdfLink"
         ><div class="linkImage">
-          <img src="assets/crown-logo.png" alt="Easter Sunday Logo" />
+          <img
+            src="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_120,dpr_auto,f_auto,q_auto/easterinlakewood/crown_logo"
+            alt="Easter Sunday Logo"
+          />
         </div>
         Easter Flyer</a
       >
@@ -192,7 +194,10 @@
         rel="noopener noreferrer"
         class="pdfLink"
         ><div class="linkImage">
-          <img src="assets/good-friday.png" alt="Good Friday Logo" />
+          <img
+            src="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_120,dpr_auto,f_auto,q_auto/easterinlakewood/good_friday"
+            alt="Good Friday Logo"
+          />
         </div>
         Good Friday Flyer</a
       >
@@ -202,7 +207,10 @@
         rel="noopener noreferrer"
         class="pdfLink"
         ><div class="linkImage">
-          <img src="assets/egg-hunt.png" alt="Egg Hunt Logo" />
+          <img
+            src="https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_120,dpr_auto,f_auto,q_auto/easterinlakewood/easter_egg_hunt"
+            alt="Egg Hunt Logo"
+          />
         </div>
         Egg Hunt Flyer</a
       >

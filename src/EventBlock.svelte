@@ -1,5 +1,6 @@
 <script>
-  export let eventImg = "assets/crown-logo.png";
+  export let eventImg =
+    "https://res.cloudinary.com/mykeld74/image/upload/c_scale,w_450,dpr_auto,f_auto,q_auto/easterinlakewood/crown_logo";
   export let eventImgDesc = "Easter Sunday Logo";
   export let backgroundColor = `radial-gradient(
       circle,
