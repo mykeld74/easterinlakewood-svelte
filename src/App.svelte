@@ -53,7 +53,7 @@
           >
         </h3>
         <h4>Sunday 4/4</h4>
-        <h4>6:30 Sunrise Service & 9am Easter Service</h4>
+        <h4>6:30 Outdoor Sunrise Service & 9am Easter Service</h4>
         <p>
           7700 W Woodard Drive<br />
           Lakewood, CO
@@ -159,7 +159,7 @@
           >
         </h3>
         <h4>Sunday 4/4</h4>
-        <h4>6:30am Sunrise Service & 9am Easter Service</h4>
+        <h4>6:30am Outdoor Sunrise Service & 9am Easter Service</h4>
         <p>
           7700 W Woodard Drive<br />
           Lakewood, CO
